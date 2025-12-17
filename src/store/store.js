@@ -1,17 +1,11 @@
 import {applyMiddleware, legacy_createStore as createStore} from "redux";
-import logger from "redux-logger";
 import {thunk} from "redux-thunk";
-import {accountReducer} from "../reducer/accountReducer.js";
+import {rootReducer} from "../reducer/rootReducer.js";
 
 const initialState = {
-    message: 'Enter city name',
-    weather: {
-        // country: '',
-        // city: '',
-        // temp: '',
-        // pressure: '',
-        // sunset: ''
-    }
+    message: '',
+    weather: {},
 }
 
-export const store = createStore(accountReducer, initialState, applyMiddleware(thunk));
+
+export const store = createStore(rootReducer, initialState, applyMiddleware(thunk));
