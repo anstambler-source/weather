@@ -1,11 +1,13 @@
+import {useDispatch} from "react-redux";
+import {fetchWeather} from "../actions/accountActions.js";
 
-const Form = ({getWeather}) => {
-
+const Form = () => {
+    const dispatch = useDispatch();
 
     const handleClickSubmit = e => {
-        e.preventDefault(); // otmenit defoltnoe povedenie
+        e.preventDefault();
         const city = e.currentTarget.city.value.trim();
-        getWeather(city)
+        dispatch(fetchWeather(city));
     }
 
     return (

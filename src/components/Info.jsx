@@ -1,6 +1,3 @@
-// 'rsc' react stateless komponent.
-// nabiraem 'rsc' i jmem tab
-
 const Info = () => {
     return (
         <div>
