@@ -3,7 +3,7 @@ import {thunk} from "redux-thunk";
 import {rootReducer} from "../reducer/rootReducer.js";
 
 const initialState = {
-    message: '',
+    message: 'Enter city name',
     weather: {},
 }
 
