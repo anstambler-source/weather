@@ -1,5 +1,5 @@
 import {useDispatch} from "react-redux";
-import {fetchWeather} from "../actions/accountActions.js";
+import {fetchWeather} from "../features/api/weatherAction.js";
 
 const Form = () => {
     const dispatch = useDispatch();
